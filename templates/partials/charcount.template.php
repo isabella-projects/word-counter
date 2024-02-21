@@ -1,0 +1,1 @@
+<input type="checkbox" name="wcp_charcount" value="1" <?php checked(get_option('wcp_charcount'), 1) ?>>

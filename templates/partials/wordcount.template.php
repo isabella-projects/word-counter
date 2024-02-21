@@ -1,0 +1,1 @@
+<input type="checkbox" name="wcp_wordcount" value="1" <?php checked(get_option('wcp_wordcount'), 1) ?>>
