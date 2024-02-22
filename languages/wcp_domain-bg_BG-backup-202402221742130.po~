@@ -1,0 +1,119 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Word Counter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-22 17:32+0000\n"
+"PO-Revision-Date: 2024-02-22 17:39+0000\n"
+"Last-Translator: Damyan\n"
+"Language-Team: Български\n"
+"Language: bg_BG\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.6; wp-6.4.3\n"
+"X-Domain: wcp_domain"
+
+#: word-counter.php:162
+msgid "1 minute"
+msgstr "1 минута"
+
+#: word-counter.php:164
+msgid "about"
+msgstr "около"
+
+#: templates/partials/location.template.php:2
+msgid "At the beginning of post"
+msgstr "В началото на публикацията"
+
+#: templates/partials/location.template.php:3
+msgid "At the end of post"
+msgstr "В края на публикацията"
+
+#: word-counter.php:65
+msgid "Character Count"
+msgstr "Брой на знаци"
+
+#: word-counter.php:135
+msgid "characters"
+msgstr "знаци"
+
+#. Author of the plugin
+msgid "D. Minkov"
+msgstr "Д. Минков"
+
+#: word-counter.php:39
+msgid "Display Location"
+msgstr "Място на показване"
+
+#: word-counter.php:101
+msgid "Display location must be either Beginning or End"
+msgstr ""
+"Мястото на показване трябва да е или \"В началото\" или \"В края\" на "
+"публикацията"
+
+#: word-counter.php:49
+msgid "Headline Text"
+msgstr "Заглавие"
+
+#. Author URI of the plugin
+msgid "https://github.com/isabella-projects"
+msgstr "https://github.com/isabella-projects"
+
+#. URI of the plugin
+msgid "https://github.com/isabella-projects/word-counter"
+msgstr "https://github.com/isabella-projects/word-counter"
+
+#: word-counter.php:162
+msgid "less than"
+msgstr "по-малко от"
+
+#: word-counter.php:164
+msgid "minute"
+msgstr "минута"
+
+#: word-counter.php:52
+msgid "Post Statistics"
+msgstr "Статистика на публикацията"
+
+#: word-counter.php:74
+msgid "Read Time"
+msgstr "Време за прочитане"
+
+#: word-counter.php:164
+msgid "s"
+msgstr "и"
+
+#: word-counter.php:131 word-counter.php:135
+msgid "This post has"
+msgstr "Тази публикация има"
+
+#: word-counter.php:140
+msgid "This post will take"
+msgstr "За тази публикация ще отнеме"
+
+#: word-counter.php:140
+msgid "to read"
+msgstr "да се прочете"
+
+#: word-counter.php:56
+msgid "Word Count"
+msgstr "Брой на думите"
+
+#: word-counter.php:26 templates/dashboard.template.php:2
+msgid "Word Count Settings"
+msgstr "Настройки за Брояча на думи"
+
+#. Name of the plugin
+#: word-counter.php:26
+msgid "Word Counter"
+msgstr "Брояч на думи"
+
+#. Description of the plugin
+msgid "Word counter plugin for WordPress blog posts"
+msgstr "Плъгин за броене на думи в публикации за WordPress"
+
+#: word-counter.php:131
+msgid "words"
+msgstr "думи"

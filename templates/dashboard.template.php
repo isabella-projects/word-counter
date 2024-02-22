@@ -1,5 +1,5 @@
 <div class="wrap">
-    <h1>Word Count Settings</h1>
+    <h1><?php _e('Word Count Settings', 'wcp_domain'); ?></h1>
     <form action="options.php" method="POST">
         <?php
         settings_fields('wordcount');

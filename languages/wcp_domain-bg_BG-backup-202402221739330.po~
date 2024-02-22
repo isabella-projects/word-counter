@@ -1,0 +1,117 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Word Counter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-22 17:32+0000\n"
+"PO-Revision-Date: 2024-02-22 17:32+0000\n"
+"Last-Translator: Damyan\n"
+"Language-Team: Български\n"
+"Language: bg_BG\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.6; wp-6.4.3\n"
+"X-Domain: wcp_domain"
+
+#: word-counter.php:162
+msgid "1 minute"
+msgstr ""
+
+#: word-counter.php:164
+msgid "about"
+msgstr ""
+
+#: templates/partials/location.template.php:2
+msgid "At the beginning of post"
+msgstr ""
+
+#: templates/partials/location.template.php:3
+msgid "At the end of post"
+msgstr ""
+
+#: word-counter.php:65
+msgid "Character Count"
+msgstr ""
+
+#: word-counter.php:135
+msgid "characters"
+msgstr ""
+
+#. Author of the plugin
+msgid "D. Minkov"
+msgstr ""
+
+#: word-counter.php:39
+msgid "Display Location"
+msgstr ""
+
+#: word-counter.php:101
+msgid "Display location must be either Beginning or End"
+msgstr ""
+
+#: word-counter.php:49
+msgid "Headline Text"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://github.com/isabella-projects"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://github.com/isabella-projects/word-counter"
+msgstr ""
+
+#: word-counter.php:162
+msgid "less than"
+msgstr ""
+
+#: word-counter.php:164
+msgid "minute"
+msgstr ""
+
+#: word-counter.php:52
+msgid "Post Statistics"
+msgstr ""
+
+#: word-counter.php:74
+msgid "Read Time"
+msgstr ""
+
+#: word-counter.php:164
+msgid "s"
+msgstr ""
+
+#: word-counter.php:131 word-counter.php:135
+msgid "This post has"
+msgstr ""
+
+#: word-counter.php:140
+msgid "This post will take"
+msgstr ""
+
+#: word-counter.php:140
+msgid "to read"
+msgstr ""
+
+#: word-counter.php:56
+msgid "Word Count"
+msgstr ""
+
+#: word-counter.php:26 templates/dashboard.template.php:2
+msgid "Word Count Settings"
+msgstr ""
+
+#. Name of the plugin
+#: word-counter.php:26
+msgid "Word Counter"
+msgstr ""
+
+#. Description of the plugin
+msgid "Word counter plugin for WordPress blog posts"
+msgstr ""
+
+#: word-counter.php:131
+msgid "words"
+msgstr ""

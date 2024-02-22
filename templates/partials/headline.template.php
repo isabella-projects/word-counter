@@ -1,1 +1,1 @@
-<input type="text" name="wcp_headline" value="<?php echo esc_attr(get_option('wcp_headline')); ?>">
+<input type="text" name="wcp_headline" style="min-width:350px;" value="<?php echo esc_attr(get_option('wcp_headline')); ?>">
