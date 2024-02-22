@@ -1,1 +1,0 @@
-<input type="checkbox" name="wcp_readtime" value="1" <?php checked(get_option('wcp_readtime'), 1) ?>>

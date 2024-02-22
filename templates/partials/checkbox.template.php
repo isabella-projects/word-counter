@@ -1,0 +1,1 @@
+<input type="checkbox" name="<?php echo $args['prop'] ?>" value="1" <?php checked(get_option($args['prop']), '1') ?>>

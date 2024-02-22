@@ -1,9 +1,9 @@
 <?php
 
 /*
-    Plugin Name: Test Plugin
+    Plugin Name: Word Counter
     Plugin URI: https://github.com/isabella-projects/word-counter
-    Description: First plugin description
+    Description: Small & simple WordPress plugin
     Version: 1.0
     Author: D. Minkov
     Author URI: https://github.com/isabella-projects
@@ -34,7 +34,10 @@ class WordCounter
         // Display location
         add_settings_field('wcp_location', 'Display Location', [$this, 'locationHTML'], 'word-count-settings', 'wcp_section');
         register_setting('wordcount', 'wcp_location', [
-            'sanitize_callback' => 'sanitize_text_field',
+            'sanitize_callback' => [
+                $this,
+                'sanitizeLocation'
+            ],
             'default' => '0'
         ]);
 
@@ -46,21 +49,27 @@ class WordCounter
         ]);
 
         // Word count
-        add_settings_field('wcp_wordcount', 'Word Count', [$this, 'wordCountHTML'], 'word-count-settings', 'wcp_section');
+        add_settings_field('wcp_wordcount', 'Word Count', [$this, 'checkBoxHTML'], 'word-count-settings', 'wcp_section', [
+            'prop' => 'wcp_wordcount'
+        ]);
         register_setting('wordcount', 'wcp_wordcount', [
             'sanitize_callback' => 'sanitize_text_field',
             'default' => '1'
         ]);
 
         // Character count
-        add_settings_field('wcp_charcount', 'Character Count', [$this, 'charCountHTML'], 'word-count-settings', 'wcp_section');
+        add_settings_field('wcp_charcount', 'Character Count', [$this, 'checkBoxHTML'], 'word-count-settings', 'wcp_section', [
+            'prop' => 'wcp_charcount'
+        ]);
         register_setting('wordcount', 'wcp_charcount', [
             'sanitize_callback' => 'sanitize_text_field',
             'default' => '1'
         ]);
 
         // Read time
-        add_settings_field('wcp_readtime', 'Read Time', [$this, 'readTimeHTML'], 'word-count-settings', 'wcp_section');
+        add_settings_field('wcp_readtime', 'Read Time', [$this, 'checkBoxHTML'], 'word-count-settings', 'wcp_section', [
+            'prop' => 'wcp_readtime'
+        ]);
         register_setting('wordcount', 'wcp_readtime', [
             'sanitize_callback' => 'sanitize_text_field',
             'default' => '1'
@@ -77,19 +86,18 @@ class WordCounter
         require_once('templates/partials/headline.template.php');
     }
 
-    public function wordcountHTML()
+    public function checkBoxHTML($args)
     {
-        require_once('templates/partials/wordcount.template.php');
+        require('templates/partials/checkbox.template.php');
     }
 
-    public function charCountHTML()
+    public function sanitizeLocation($input)
     {
-        require_once('templates/partials/charcount.template.php');
-    }
-
-    public function readTimeHTML()
-    {
-        require_once('templates/partials/readtime.template.php');
+        if ($input !== 0 && $input !== 1) {
+            add_settings_error('wcp_location', 'wcp_location_error', 'Display location must be either Beginning or End');
+            return get_option('wcp_location');
+        }
+        return $input;
     }
 }
 
